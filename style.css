@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+}
+
+.container {
+    padding: 10px;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(325deg, #001ce9, #b3b3b3, #0c93ff);
+}
+
+.container .game {
+    margin: 50px auto;
+    max-width: 550px;
+    width: 100%;
+}
+
+.container .game .show {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    background: #003697;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 6px;
+    gap: 15px;
+}
+
+.container .game .show p {
+    color: white;
+}
+
+.container .game .show span {
+    color: coral;
+    text-transform: capitalize;
+}
+
+.container .game .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px 0;
+}
+
+.container .game .box-container .squar {
+    width: calc(100% - 10px);
+    height: 150px;
+    background-color: #0041b7;
+    margin: 5px auto;
+    font-size: 150px;
+    font-weight: normal;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    line-height: .75;
+    transition: .3s;
+}
+
+.container .game .box-container .squar:hover {
+    background-color: #002a77;
+}
